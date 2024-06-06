@@ -13,3 +13,4 @@ stories:
   steps:
   - intent: consultar_transacoes
   - action: action_consultar_transacoes
+
