@@ -1,0 +1,15 @@
+stories:
+- story: fornecer_informacoes_bancarias
+  steps:
+  - intent: fornecer_informacoes_bancarias
+  - action: action_obter_token_acesso
+
+- story: consultar_saldo
+  steps:
+  - intent: consultar_saldo
+  - action: action_consultar_saldo
+
+- story: consultar_transacoes
+  steps:
+  - intent: consultar_transacoes
+  - action: action_consultar_transacoes

@@ -1,0 +1,37 @@
+intents:
+  - fornecer_informacoes_bancarias
+  - consultar_saldo
+  - consultar_transacoes
+
+entities:
+  - numero_conta
+  - senha
+
+slots:
+  numero_conta:
+    type: text
+    influence_conversation: true
+  senha:
+    type: text
+    influence_conversation: true
+  token_acesso:
+    type: text
+    influence_conversation: false
+
+responses:
+  utter_solicitar_informacoes_bancarias:
+    - text: "Por favor, forneça seu número de conta e senha."
+
+  utter_informacoes_invalidas:
+    - text: "As informações fornecidas são inválidas. Tente novamente."
+
+  utter_saldo:
+    - text: "Seu saldo atual é de R$ {saldo}."
+
+  utter_transacoes:
+    - text: "Aqui estão suas transações recentes: {transacoes}."
+
+actions:
+  - action_obter_token_acesso
+  - action_consultar_saldo
+  - action_consultar_transacoes

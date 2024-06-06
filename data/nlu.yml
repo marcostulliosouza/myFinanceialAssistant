@@ -1,0 +1,6 @@
+nlu:
+- intent: fornecer_informacoes_bancarias
+  examples: |
+    - Minha conta é [123456](numero_conta) e minha senha é [senha123](senha)
+    - Conta: [987654](numero_conta), Senha: [minhasenha](senha)
+    - Meu número de conta é [112233](numero_conta) e a senha é [password](senha)
